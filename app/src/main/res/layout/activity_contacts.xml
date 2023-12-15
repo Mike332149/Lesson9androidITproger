@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ContactsActivity">
+
+    <RelativeLayout
+        android:id="@+id/upper_box"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@color/bg_upper_box">
+
+        <TextView
+            android:id="@+id/hi_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="monospace"
+            android:textSize="20sp"
+            android:layout_marginTop="40dp"
+            android:layout_marginStart="40dp"
+            android:text="Привіт, Адмін!"
+            android:textColor="@color/white" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/upper_box"
+        android:layout_above="@id/bottom_menu"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginVertical="20dp"
+        />
+
+
+    <LinearLayout
+        android:id="@+id/bottom_menu"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:background="@color/bg_upper_box">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="20dp"
+            android:backgroundTint="@color/design_default_color_primary_dark"
+            android:onClick="goHome"
+            android:text="Головна" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="20dp"
+            android:backgroundTint="@color/design_default_color_primary_dark"
+            android:text="Контакти"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="20dp"
+            android:backgroundTint="@color/design_default_color_primary_dark"
+            android:text="Блог"/>
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>
+
