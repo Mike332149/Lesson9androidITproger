@@ -21,7 +21,7 @@
            android:textSize="20sp"
            android:layout_marginTop="40dp"
            android:layout_marginStart="40dp"
-           android:text="Привіт, Адмін!"
+           android:text="Привіт, Lazy Djune!!!"
            android:textColor="@color/white" />
 
    </RelativeLayout>
@@ -52,11 +52,11 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/middle_box"
         android:layout_marginHorizontal="50dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="15dp"
         android:ems="10"
-        android:hint="Ввести подію/назву сервісу"
+        android:hint="Ввести подію або логін системи"
         android:inputType="textPersonName"
-        android:minHeight="48dp" />
+        android:minHeight="60dp" />
 
     <EditText
         android:id="@+id/dateOrPassword_field"
@@ -67,7 +67,7 @@
         android:layout_marginTop="20dp"
         android:layout_marginBottom="20dp"
         android:ems="10"
-        android:hint="Напишіть дату, пароль або іншу інформацію"
+        android:hint="Напишіть дату або пароль"
         android:gravity="start|top"
         android:inputType="textMultiLine" />
 
@@ -99,8 +99,7 @@
         android:layout_marginTop="10dp"
         android:layout_marginHorizontal="50dp"
         android:backgroundTint="@color/bg_upper_box"
-        android:onClick="getData"
-        android:text="Завантажити" />
+        android:text="Push to do nothing" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -112,25 +111,26 @@
         <Button
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:layout_marginHorizontal="20dp"
+            android:layout_marginHorizontal="10dp"
             android:backgroundTint="@color/design_default_color_primary_dark"
+            android:onClick="goHome"
             android:text="Головна"/>
 
         <Button
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:layout_marginHorizontal="20dp"
+            android:layout_marginHorizontal="10dp"
             android:backgroundTint="@color/design_default_color_primary_dark"
             android:onClick="goContacts"
-            android:text="Контакти" />
+            android:text="Вакансії WOT" />
 
         <Button
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:layout_marginHorizontal="20dp"
+            android:layout_marginHorizontal="10dp"
             android:backgroundTint="@color/design_default_color_primary_dark"
             android:onClick="goWeb"
-            android:text="Блог" />
+            android:text="Новини DOU" />
 
     </LinearLayout>
 

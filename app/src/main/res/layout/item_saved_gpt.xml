@@ -21,4 +21,11 @@
         android:layout_height="wrap_content"
         android:textSize="16sp"
         android:text="Example of Date or Password"/>
+
+    <Button
+        android:id="@+id/buttonToDelete"
+        android:layout_width="206dp"
+        android:layout_height="37dp"
+        android:text="Видалити дані" />
+
 </LinearLayout>
